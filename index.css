@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'PurpleSmile';
+    src: url('fonts/PurpleSmile.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'PurpleSmile', sans-serif;
+}
+.navbar {
+    background-color: #FF922D;
+}
+.navbar-brand img{
+    width: 50%;
+}
+.nav-item a {
+    color: #fff;
+    font-size: 1.5em;
+}
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #6F2BEB, #834AFF);
+    overflow: hidden;
+}
+.about {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #4D1EA4;
+    overflow: hidden;
+}
+
+.light {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+    transform: skewX(-25deg);
+    pointer-events: none;
+    z-index: 1;
+}
+.white {
+    color: #fff
+}
+.mt-6{
+    margin-top: 300px !important;
+}
+.ml-6{
+    margin-left: 100px !important;
+}
+.icon {
+    width: 100%;
+    border-radius: 10%;
+    display: block;
+}
+.icon-container {
+    position: relative;
+    display: inline-block;
+}
+.icon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.icon-container:hover .icon-overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+.game-name {
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+.game-name-a{
+    text-decoration: none;
+    color: #fff;
+}
+.sm-icon{
+    width: 50px;
+}
+.z{
+    z-index: 2;
+}
+.profile {
+    width: 40%;
+}
+.footer{
+    background-color: #6F2BEB   ;
+}
